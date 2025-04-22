@@ -9,7 +9,7 @@
 #wrap header nav .gnb li {}
 #wrap header nav .gnb li a {
     /* font-family:'Pretendard', sans-serif; reset초기값에 존재하므로 생략 */
-    font-weight:400px;
+    font-weight:600;
     font-size:1.125rem;
     /* line-height:1; reset초기값에 존재하므로 생략
     letter-spacing:-0.02rem; reset초기값에 존재하므로 생략
