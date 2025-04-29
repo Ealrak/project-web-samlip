@@ -1,0 +1,34 @@
+/* sns.css */
+#wrap {}
+#wrap main .path {
+    padding:12px 60px 12px 0;
+    border:1px solid #f1f1f1;
+    border-left:0; border-right:0;
+    text-align:right;
+}
+#wrap main .path * {
+    font-size:0.75rem;
+}
+#wrap main .path a {}
+#wrap main .path img {margin:0 8px;}
+#wrap main .path em {}
+#wrap main > * {text-align:center;}
+#wrap h1 {
+    font-size:3.75rem;
+    font-weight:600;
+    margin:93px 0 28px;
+}
+#wrap p {
+    margin-bottom:92px;
+}
+#wrap .bg {
+    background-color:yellow;
+}
+#wrap .bg .sns_list {
+    background-color:blue;
+    display:inline-block;
+}
+#wrap .bg .sns_list img {}
+#wrap .bg .sns_list a {}
+#wrap .bg .sns_list a h2 {}
+#wrap .bg .sns_list a h2 p {}
