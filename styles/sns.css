@@ -1,34 +1,46 @@
 /* sns.css */
-#wrap {}
+#wrap main {text-align:center;}
 #wrap main .path {
-    padding:12px 60px 12px 0;
-    border:1px solid #f1f1f1;
-    border-left:0; border-right:0;
+    background-color:#eee;
     text-align:right;
-}
-#wrap main .path * {
-    font-size:0.75rem;
+    padding:15px 60px 15px 0;
 }
 #wrap main .path a {}
-#wrap main .path img {margin:0 8px;}
+#wrap main .path img {}
 #wrap main .path em {}
-#wrap main > * {text-align:center;}
-#wrap h1 {
+#wrap main h1 {
+    margin:100px 0 50px;
     font-size:3.75rem;
-    font-weight:600;
-    margin:93px 0 28px;
+    font-weight:700;
 }
-#wrap p {
-    margin-bottom:92px;
+#wrap main > p {
+    margin:0 0 60px;
+    font-size:1.125rem;
 }
-#wrap .bg {
+#wrap main .bg {
+    background-color:#f5f5f5;
+}
+#wrap main .bg .container {
     background-color:yellow;
+    width:1280px; margin:0 auto;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
 }
-#wrap .bg .sns_list {
-    background-color:blue;
-    display:inline-block;
+#wrap main .bg .container a:hover {
+    border:1px solid #4083ff;
+    box-shadow:0 0 20px rgba(0,0,0,0.2);
 }
-#wrap .bg .sns_list img {}
-#wrap .bg .sns_list a {}
-#wrap .bg .sns_list a h2 {}
-#wrap .bg .sns_list a h2 p {}
+#wrap main .bg .container a {
+    background-color:#eee;
+    width:390px; height:360px;
+    /* padding-top:80px; */
+    display:flex; flex-flow:column nowrap;
+    justify-content:center;
+}
+#wrap main .bg .container a:last-child {}
+#wrap main .bg .container a p {}
+#wrap main .bg .container a p img {}
+#wrap main .bg .container a h2  {
+    margin:15px 0;
+}
+#wrap main .bg .container a h2+p {}
