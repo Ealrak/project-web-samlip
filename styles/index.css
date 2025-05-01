@@ -1,1 +1,104 @@
 /* index.css 메인 첫 페이지의 <main> */
+main {}
+main .ad_wrap {}  /* 슬라이드+버G */
+main .ad_wrap .ad_container {} /* 슬라이드 G */
+main .ad_wrap .ad_container .ad {
+    display:none; /* 모두 숨기기 */
+    height:800px;
+    background-position:center; /* 화면 줄였을 때 이미지가 따라온다 */
+    position:relative;
+} /* 슬라이드 */
+main .ad_wrap .ad_container .ad .ad_txt {
+    background-color:yellow;
+    width:1280px; /* margin:0 auto; */
+    position:absolute; bottom:131px;
+    left:50%; transform:translateX(-50%); /* left50%는 시작점이 50%으로 되고 transfrom:traslateX(-50%)를 넣으면 시작점을 50%만큼 뒤로 줄인다. (글을 가운데로 보내는 공식) */
+}
+main .ad_wrap .ad_container .ad .ad_txt h2 {
+    font-size:2.5rem;
+    font-weight:700;
+    margin-bottom:15px;
+}
+main .ad_wrap .ad_container .ad .ad_txt p {
+    line-height:150%;
+}
+main .ad_wrap .ad_btn {
+    text-align:center;
+    padding:34px 0;
+}
+main .ad_wrap .ad_btn #ad_prev {margin-right:10px;}
+main .ad_wrap .ad_btn #ad_prev img {}
+main .ad_wrap .ad_btn #ad_next {transform:scaleX(-1);} /* 좌우반전하는 코드 */
+main .ad_wrap .ad_btn #ad_next img {}
+/* ================2. 광고개별영역 */
+main .ad_wrap .ad_container .ad1 {
+    display:block;
+    background-image:url(../images/ad_bg.jpg);
+}
+main .ad_wrap .ad_container .ad2 {}
+main .ad_wrap .ad_container .ad3 {}
+main .ad_wrap .ad_container .ad4 {}
+main .ad_wrap .ad_container .ad5 {}
+/* ============================2. 뉴스&공지사항 */
+main .news_all {text-align:center;}
+main .news_all h2 {
+    font-size:4rem;
+    font-weight:700;
+    margin:50px 0 20px;
+}
+main .news_all > p {
+    margin-bottom:20px;
+}
+main .news_all .news_wrap {
+    border:5px solid red;
+    width:1370px; overflow:hidden; margin:0 auto;
+}
+main .news_all .news_wrap .news_container {
+    border:5px solid blue;
+    display:flex; flex-flow:row nowrap;
+    width:max-content;
+    text-align:left;
+    padding:100px 0 50px;
+    margin-bottom:20px;
+}
+main .news_all .news_wrap .news_container .news {
+    background-color:yellow;
+    width:311px; height:287px;
+    margin-right:42px;
+    border:1px solid #ccc;
+    position:relative;
+}
+main .news_all .news_wrap .news_container .news:hover {
+    border:1px solid #0000ff;
+}
+main .news_all .news_wrap .news_container .news a {}
+main .news_all .news_wrap .news_container .news p {}
+main .news_all .news_wrap .news_container .news a p img {}
+main .news_all .news_wrap .news_container .news a h3 {
+    font-weight:500;
+    font-size:1.125rem;
+    padding:20px;
+}
+main .news_all .news_wrap .news_container .news .date {
+    position:absolute; bottom:20px; left:20px;
+}
+main .news_all .news_wrap .news_btn {}
+main .news_all .news_wrap .news_btn #news_prev {margin-right:10px;}
+main .news_all .news_wrap .news_btn #news_prev img {}
+main .news_all .news_wrap .news_btn #news_next {transform:scaleX(-1);}
+main .news_all .news_wrap .news_btn #news_next img {}
+main .news_all .all_news {
+    border:1px solid #ccc;
+    padding:13px 50px;
+    display:inline-block;
+    width:max-content; margin:20px auto 50px;
+}
+main .news_all .all_news img {}
+main .news_all .all_news em {
+    font-size:0.875rem;
+    font-weight:500;
+}
+/* ============================all_news 버튼 hover 효과 모음 */
+main .news_all .all_news:hover {background:#000;} 
+main .news_all .all_news:hover img {filter:invert(100%);} 
+main .news_all .all_news:hover em {color:#fff;} 
